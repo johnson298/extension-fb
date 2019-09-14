@@ -1,0 +1,215 @@
+body {
+  overflow: hidden;
+  margin: 0px;
+  background: white;
+  color: #303030;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 5px;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  background: #64c306;
+  color: white;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 0;
+}
+
+#start_plus:hover {
+  background: #74C523;
+}
+
+#Stop_plus:hover {
+  background: #E46A56;
+}
+
+.btn_red {
+  background: #e64b32;
+  color: white;
+}
+
+label {
+  font-size: 13px;
+  font-family: arial;
+  line-height: 18px;
+}
+
+.main {
+  width: 254px;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: arial;
+  color: #408313;
+  border-bottom: solid 1px gainsboro;
+  padding-bottom: 6px;
+  margin: 0px 0px 10px 0;
+}
+
+.footer {
+  font-size: 12px;
+  float: left;
+  width: 100%;
+  padding: 3px 10px 2px;
+  text-decoration: none;
+  background-color: #efefef;
+  border-top: solid 1px gainsboro;
+}
+
+.footer a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #999;
+}
+
+.footer a:hover {
+  color: #494949;
+}
+
+#config_box {
+  display: none;
+}
+
+#login_box {
+  display: none;
+}
+
+.profile-userpic {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.profile-usertitle {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #007cb9!important;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.profile-usertitle li {
+  border-bottom: solid 1px gainsboro;
+  padding: 5px 0;
+}
+
+.btn_buy {
+  font-weight: normal;
+  padding: 3px 5px;
+  text-decoration: none;
+  background: #e7505a!important;
+  margin-left: 8px;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn_buy:hover {
+  background: #ea3642!important;
+}
+
+.config_box_content {
+  padding: 0px 20px;
+  float: left;
+}
+
+.box_search_fb {
+  padding: 0px 20px 0px 20px;
+  float: left;
+}
+
+.btn_login {
+  background: #e7505a!important;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  width: 97%;
+  line-height: 1.5em;
+  font-size: 12px;
+}
+
+#txtsearchUidFb {
+  float: left;
+  line-height: 16px;
+  width: 112px;
+  margin-right: 4px;
+  border: solid 1px gainsboro;
+  border-radius: 1px;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+
+#searchUidFb {
+  width: 70px;
+  float: left;
+}
+
+#searchUidFbResult {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+#searchUidFbLoading {
+  display: none;
+  margin-top: 6px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.box_history {
+  padding: 0px 20px 20px 20px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.box_history table {
+  max-height: 100px;
+  overflow: scroll;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.box_history table tr {
+  border: solid 1px gainsboro;
+}
+
+.box_history table td,.box_history table th {
+  border: solid 1px gainsboro;
+  padding: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 64px;
+}
+
+.btnsavehistory {
+  font-weight: normal;
+  padding: 3px 5px;
+  text-decoration: none;
+  background: #64c306!important;
+  margin-left: 8px;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0;
+}

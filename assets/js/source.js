@@ -16,9 +16,7 @@ $(document).ready(function() {
         }, 500)
     } catch (t) {}
 }), $(document).on("click", ".nhd_btn_get_phone", function(t) {
-      chrome.runtime.sendMessage({greeting: "removeCookie"}, function(response) {
-      console.log(response.farewell);
-    });
-        $(this).addClass('show-sdt');
+     
+       $(this).addClass('show-sdt');
         $(this).text('0896.1236449');
 });
