@@ -1,0 +1,12 @@
+{
+  "name": "johnson",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "ahihi ahaha",
+  "browser_action": {
+    "default_icon": "yinyang.ico",
+    "default_popup":"myPopup.html",
+    "default_title": "title"
+  },
+  "permissions": [ "https://khowebmau.info/*", "https://phone.chiasetaikhoan.com/*", "webRequest", "webNavigation", "storage", "tabs", "notifications" ]
+}
