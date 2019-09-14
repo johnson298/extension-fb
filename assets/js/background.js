@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
                     //remove cookie
                     //...
 
-              sendResponse({farewell:"cookie clean"});
+sendResponse({farewell:"cookie clean"});
 
         }
 

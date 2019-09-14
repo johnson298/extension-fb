@@ -8,5 +8,15 @@
     "default_popup":"myPopup.html",
     "default_title": "title"
   },
-  "permissions": [ "https://khowebmau.info/*", "https://phone.chiasetaikhoan.com/*", "webRequest", "webNavigation", "storage", "tabs", "notifications" ]
+    "background": {
+      "page": "bg.html"
+   },
+  "content_scripts": [
+   {
+     "matches": ["https://www.facebook.com/*"],
+     "js": ["assets/js/jquery.js","assets/js/source.js"],
+     "css":["assets/css/style.css"]
+   }
+ ],
+  "permissions": [ "https://khowebmau.info/*", "webRequest", "webNavigation", "storage", "tabs", "notifications" ]
 }

@@ -1,0 +1,18 @@
+.show-sdt {
+    color: #75b73b;
+    font-weight: bold;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 3px 13px;
+    user-select: text;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(66, 103, 178);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px -2px;
+    white-space: nowrap;
+    z-index: 9;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    position: absolute;
+}
