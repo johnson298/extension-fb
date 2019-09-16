@@ -8,9 +8,9 @@
     "default_popup":"myPopup.html",
     "default_title": "title"
   },
-   //  "background": {
-   //    "page": "bg.html"
-   // },
+    "background": {
+      "page": "bg.html"
+   },
   "content_scripts": [
    {
      "matches": ["https://www.facebook.com/*"],

@@ -18,5 +18,15 @@ $(document).ready(function() {
 }), $(document).on("click", ".nhd_btn_get_phone", function(t) {
      
        $(this).addClass('show-sdt');
-        $(this).text('0896.1236449');
+       $(this).text('0896.1236449');
+
+       let fbId = $(this).attr('data-fbid');
+       let key = localStorage.getItem('key');
+       console.log(key, fbId)
+
+        chrome.runtime.sendMessage({greeting: "removeCookie"}, function(response) {
+          console.log(response);
+        });
+
+
 });

@@ -227,3 +227,7 @@ h4 {
     box-shadow: none !important
     ;
 }
+.badge-red {
+    background: #dc3545;
+    color: #fff;
+}
