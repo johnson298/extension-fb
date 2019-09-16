@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
     function initHtml(data) {
-        return `<div class="col-4 d-flex align-items-center"> <div class="profile-userpic"> <img id="profile-userpic-img" src="assets/images/call.png" class="img-fluid rounded-circle" alt=""> </div> </div><div class="col-8 pl-0"><ul style="list-style: none;"><li class="py-2 border-bottom profile-usertitle-name"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Tên KH: </span><span id="profile-user-name">${data.first_name} ${data.last_name}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-id"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Ngày hết hạn: </span><span>${data.date_expiry}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-job"><span id="profile-user-count"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Email: </span><span>${data.email}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-job"><span id="profile-user-count"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Trạng thái: </span><span class=" badge badge-success d-flex align-items-center">${data.status_label}</span></p> </li></ul></div>`;
+        return `<div class="col-4 d-flex align-items-center"> <div class="profile-userpic"> <img id="profile-userpic-img" src="assets/images/call.png" class="img-fluid rounded-circle" alt=""> </div> </div><div class="col-8 pl-0"><ul style="list-style: none;"><li class="py-2 border-bottom profile-usertitle-name"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Tên KH: </span><span id="profile-user-name">${data.name}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-id"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Ngày hết hạn: </span><span>${data.date_expiry}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-job"><span id="profile-user-count"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Email: </span><span>${data.email}</span></p> </li><li class="py-2 border-bottom profile-usertitle-job"><span id="profile-user-count"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Số ngày còn lại: </span><span class=" badge badge-success d-flex align-items-center">${data.time_remaining}</span></p> </li> <li class="py-2 border-bottom profile-usertitle-job"><span id="profile-user-count"> <p class="mb-0 d-flex justify-content-between font-14 font-weight-500"><span>Trạng thái: </span><span class=" badge badge-${data.status_label_color} d-flex align-items-center">${data.status_label}</span></p> </li></ul></div>`;
     }
 
     function getData(key) {
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
                 localStorage.setItem('key', key);
 
-                notification_et('Đăng nhập thành công!');
+                notification_et(`Trạng thái tài khoản: ${data.status_label}`);
             }
         });
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
             let key = $('#idValue').val();
             getData(key);
             $('#inputKey').hide();
-
+  			notification_et('Đăng nhập thành công!');
 
 
         })
@@ -73,5 +73,5 @@ function notification_et(text) {
     // set time close 
     setTimeout(function() {
         notification.close();
-    }, 2000);
+    }, 3000);
 }
