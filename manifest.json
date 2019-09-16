@@ -6,7 +6,7 @@
   "browser_action": {
     "default_icon": "assets/images/call.png",
     "default_popup":"myPopup.html",
-    "default_title": "title"
+    "default_title": "Get phone customer"
   },
     "background": {
       "page": "bg.html"
