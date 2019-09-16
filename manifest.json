@@ -1,10 +1,10 @@
 {
-  "name": "johnson",
+  "name": "FindCall",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "ahihi ahaha",
+  "description": "Dễ dàng lấy số điện thoại khách hàng chỉ bằng 1 cú click !",
   "browser_action": {
-    "default_icon": "yinyang.ico",
+    "default_icon": "assets/images/call.png",
     "default_popup":"myPopup.html",
     "default_title": "title"
   },

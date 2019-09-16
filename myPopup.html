@@ -4,41 +4,44 @@
 	<meta charset="UTF-8">
 	<title>My extension by son</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/popup.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
 </head> 
-<body>
-    <div class="header">
-        <div class="row">
-            <h4 style="line-height: 24px;padding: 10px 0px 5px 10px;text-align: center;">
-               Tìm Kiếm SĐT Khách Hàng
-            </h4>
-        </div>
+<body style="width: 400px;">
+    <div class="container mt-2">
+        <h6 style="color: #006266;">
+           Tìm Kiếm SĐT Khách Hàng
+        </h6>
     </div>
-    <div class="main">
-        <div id="config_box" style="display: block;">
-            <div class="row">
-            	<div class="profile-userpic">
-                    <img id="profile-userpic-img" src="https://commentform.marketforce.com/images/BK-WebComment/Phone.png" class="img-responsive" width="80px" alt="">
+    <div class="container">
+        <div class="row" id="inputKey">   
+            <div class="col-12">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Nhập key" id="idValue" value="5d7cbd59d0929">
+                  <div class="input-group-append">
+                    <span class="input-group-text cursor-pointer" id="btnGetData">Kích hoạt</span>
+                  </div>
                 </div>
-                <ul class="profile-usertitle">
-                    <li class="profile-usertitle-name">Tên KH:<span id="profile-user-name">Quyền Anh Võ</span></li>
-                    <li class="profile-usertitle-id" style="">Ngày hết hạn:10/03/2019</li>
-                    <li class="profile-usertitle-job"><span id="profile-user-count">Email: devqanh@gmail.com</span>  
-                   <li class="profile-usertitle-job"><span id="profile-user-count">Trạng thái: <span class="btn_buy">Kích hoạt</span></span>
-                </ul>
-                
-            </div>		
-			<div class="box_history">
-			</div>
+            </div>
         </div>
-        </div>
+         <div id="loading"><img src="assets/images/loading.gif" alt="" class="img-fluid"></div>
+        <div class="row" id="content">
+           
+        </div>		
+		<div class="box_history">
+		</div>
     </div>
-    <div class="footer">
-        <a title="ETADO" href="https://etado.vn" target="_blank">
-            ETADO
-        </a>
-        <a title="Lại Thế Sơn" href="https://www.facebook.com/lts298" target="_blank">
-      		Lại Thế Sơn
-        </a> 
+    <div class="footer d-flex justify-content-between">
+        <div class="info">
+            <span class="text-muted">Website:</span> 
+            <a title="ETADO" href="https://etado.vn" target="_blank">
+                ETADO
+            </a>
+            <span class="text-muted">Dev:</span> 
+            <a title="Lại Thế Sơn" href="https://www.facebook.com/lts298" target="_blank">
+                Lại Thế Sơn
+            </a>
+        </div> 
+        <div class="logOut"><a href="#" id="logOut">Đăng xuất</a></div>
     </div>
 
 
@@ -46,5 +49,6 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/source.js"></script>
 <script src="assets/js/background.js"></script>
+<script src="assets/js/ajax.js"></script>
 </body>
 </html>

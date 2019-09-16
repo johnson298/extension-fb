@@ -2,17 +2,20 @@
     color: #75b73b;
     font-weight: bold;
     background: #fff;
-    border: 1px solid #ccc;
-    padding: 3px 13px;
     user-select: text;
-    font-size: 14px;
     font-weight: bold;
     color: rgb(66, 103, 178);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px -2px;
     white-space: nowrap;
     z-index: 9;
     border-width: 1px;
     border-style: solid;
-    border-radius: 1px;
     position: absolute;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    text-decoration: underline;
+    transform: translate(0px, -1px);
+    font-size: 13px;
+    font-family: segoe ui !important;
+    padding: 3px;
 }
