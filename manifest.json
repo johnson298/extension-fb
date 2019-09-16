@@ -8,6 +8,9 @@
     "default_popup":"myPopup.html",
     "default_title": "Get phone customer"
   },
+  "icons": {
+    "64": "assets/images/64.png"
+  },
     "background": {
       "page": "bg.html"
    },
