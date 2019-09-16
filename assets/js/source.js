@@ -24,9 +24,11 @@ $(document).ready(function() {
        let key = localStorage.getItem('key');
        console.log(key, fbId)
 
-        chrome.runtime.sendMessage({greeting: "removeCookie"}, function(response) {
-          console.log(response);
-        });
+chrome.extension.sendRequest({check: 'getphone'}, 
+function (response) {
+  
+  console.log('Response From API', response);
+});
 
 
 });

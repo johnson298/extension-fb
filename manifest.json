@@ -9,8 +9,7 @@
     "default_title": "title"
   },
     "background": {
-       "scripts": ["assets/js/background.js"],
-    "persistent": true
+      "page": "bg.html"
    },
   "content_scripts": [
    {
