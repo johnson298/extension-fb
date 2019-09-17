@@ -23,6 +23,7 @@ $(document).ready(function() {
                 $('#content').html(html);
                 $('#btnGetData').text('Kích hoạt');
                 $('#loading').hide();
+                $('#logOut').show();
 
                 localStorage.setItem('key', key);
 
@@ -31,23 +32,31 @@ $(document).ready(function() {
         });
 
     }
+
+    // login
     if (localStorage.getItem('key') !== null) {
         $('#inputKey').hide();
+        $('#logOut').show();
         let key = localStorage.getItem('key');
         let data = getData(key);
     } else {
+        $('#logOut').hide();
         $('#inputKey').show();
         $('#btnGetData').click(function(event) {
             let key = $('#idValue').val();
             getData(key);
             $('#inputKey').hide();
+            $('#idValue').val('');
   			notification_et('Đăng nhập thành công!');
 
 
         })
     }
+
+    // logout
     $('#logOut').click(function() {
         $('#inputKey').show();
+        $('#logOut').hide();
         localStorage.removeItem('key');
         $('#content').html('');
         notification_et('Đăng xuất thành công!');

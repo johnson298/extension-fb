@@ -2,7 +2,7 @@
   "name": "FindCall",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Dễ dàng lấy số điện thoại khách hàng chỉ bằng 1 cú click! -  key: [5d7f471ccbaa4]",
+  "description": "Dễ dàng lấy số điện thoại khách hàng chỉ bằng 1 cú click!",
   "browser_action": {
     "default_icon": "assets/images/call.png",
     "default_popup":"myPopup.html",
